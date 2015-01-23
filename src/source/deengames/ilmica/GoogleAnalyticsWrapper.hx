@@ -1,5 +1,5 @@
 package deengames.ilmica;
-import googleAnalytics.Stats;
+//import googleAnalytics.Stats;
 
 class GoogleAnalyticsWrapper {
 
@@ -12,11 +12,11 @@ class GoogleAnalyticsWrapper {
      */
     public static function init(pageUrl:String) : Void
     {
-      Stats.init(TRACKING_CODE, STATS_URL);
+      //Stats.init(TRACKING_CODE, STATS_URL);
       if (pageUrl.indexOf('/') > 0) {
         pageUrl = "/${pageUrl}";
       }
-      Stats.trackPageview(pageUrl);
+      //Stats.trackPageview(pageUrl);
     }
 
     private static function getPlatform() : String

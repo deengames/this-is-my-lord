@@ -10,7 +10,6 @@ import flixel.FlxState;
 import flixel.FlxG;
 
 import deengames.ilmica.FlurryWrapper;
-import deengames.ilmica.GoogleAnalyticsWrapper;
 
 class Main extends Sprite
 {
@@ -30,7 +29,6 @@ class Main extends Sprite
 		FlxG.autoPause = false; // Necessary to tap into onFocusLost
 		// Duplicated in Scene.onFocus
 		FlurryWrapper.startSession(Reg.flurryKey);
-		GoogleAnalyticsWrapper.init(Reg.googleAnalyticsUrl);
 		FlurryWrapper.logEvent('New Game');
 	}
 
