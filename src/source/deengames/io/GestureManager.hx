@@ -11,6 +11,8 @@ class GestureManager
   // TODO: take a sprite or pressed-on object instead of the direction only
   private var callbacks:Map<Gesture, SwipeDirection->Void> = new Map<Gesture, SwipeDirection->Void>();
 
+  public function new() { } 
+
   public function onGesture(gesture:Gesture, callback:SwipeDirection->Void)
   {
     callbacks.set(gesture, callback);
